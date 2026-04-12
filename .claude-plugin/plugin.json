@@ -1,0 +1,11 @@
+{
+  "name": "openclaw-maintenance-skill",
+  "description": "Best practices for maintaining multiple AI agents with OpenClaw — lean workspaces, skill-first architecture, memory continuity, trust-but-verify config/docs management, and agent coherence",
+  "version": "1.0.0",
+  "author": {
+    "name": "hadikusumawahab"
+  },
+  "license": "MIT",
+  "keywords": ["openclaw", "multi-agent", "maintenance", "best-practices", "workspace"],
+  "skills": ["./skills/openclaw-guidelines"]
+}

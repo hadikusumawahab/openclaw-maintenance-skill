@@ -45,6 +45,7 @@ When agents keep forgetting things or repeating mistakes, the problem is almost 
 **Config changes, CLI commands, and docs evolve. Trust your setup, but always verify it still works.**
 
 - When unsure about a config field, feature, or best practice — fetch the docs first at https://docs.openclaw.ai/. OpenClaw evolves fast; don't rely on stale assumptions or LLM training data.
+- Before building a new skill, tool, or integration — check if OpenClaw already has a native equivalent (e.g., `image_generate`, `video_generate`). Familiar-shaped requests ("build a shared skill for X") are the highest-risk moment to skip verification, because pattern-matching feels like progress. A native tool + config field is usually minutes of work; a custom skill is hours plus ongoing token cost.
 - Run validation and diagnostics after every config change — catch drift before it causes silent failures.
 - Watch for wizard and onboard tools silently modifying config — they may reset tool access profiles or drop custom keys after OAuth refresh.
 - Check the running version and match solutions to it — features and flags change between releases.
